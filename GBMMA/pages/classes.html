@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grizzly Bear MMA - Classes</title>
+    <meta name="description" content="Provides the classes on offer for at Grizzly Bear MMA Academy">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="/Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Lexend+Peta:wght@900&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    <script src="/lib/classes.js"></script>
+    <script src="/lib/toggleMobileMenu.js"></script>
+</head>
+<body>
+    <header>
+        <a href="/index#" class="logo">GRIZZLY BEAR<br><span class="sublogo">MIXED MARTIAL ARTS ACADEMY</span><span class="m_sublogo">MMA ACADEMY</span></a>
+        <nav class="topnav">
+            <ul>
+                <li><a href="/index#ABOUT US">ABOUT US</a></li>
+                <li><a href="/pages/classes">CLASSES</a></li>
+                <li><a href="/pages/schedule">SCHEDULE</a></li>
+                <li><a href="/pages/fees">FEES</a></li>
+                <!-- <a href="/pages/gymrules.html">GYM RULES</a> -->
+                <li><a href="/index#CONTACT US">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div> 
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="/index#">Home</a></li>
+                <li><a href="/index#ABOUT US">ABOUT US</a></li>
+                <li><a href="/pages/classes">CLASSES</a></li>
+                <li><a href="/pages/schedule">SCHEDULE</a></li>
+                <li><a href="/pages/fees">FEES</a></li>
+                <li><a href="/index#CONTACT US">CONTACT US</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="classesH">
+        <div class="classes">
+            <div class="c_column">
+                <div class="c_row eh">
+                    <div class="c_img">
+                        <img src="/Images/jiu-jitsu.svg" class="c_cover" alt="jiu-jitsu">
+                    </div>
+                    <div class="TextBx">
+                        <button type="button" id="class_btn" onclick="openLightbox();toSlide(1)">Jiu-Jitsu</button>
+                    </div>
+                </div>
+                <div class="c_row">
+                    <div class="c_img">
+                        <img src="/Images/HIIT.svg" class="c_cover" alt="High Intensity Interval Training">
+                    </div>
+                    <div class="TextBx">
+                        <button type="button" onclick="openLightbox();toSlide(2)" id="class_btn">High Intensity Interval Training Boxing (HIIT BOX)</button>
+                    </div>
+                </div>
+            </div>
+            <div class="c_column">
+                <div class="c_row">
+                    <div class="c_img">
+                        <img src="/Images/over35.svg" class="c_cover" alt="Over 35 training">
+                    </div>
+                    <div class="TextBx">
+                        <button type="button" onclick="openLightbox();toSlide(3)" id="class_btn">OVER 35's</button>
+                    </div>
+                </div>
+                <div class="c_row eh">
+                    <div class="c_img">
+                        <img src="/Images/striking.svg" class="c_cover" alt="Striking Training">
+                    </div>
+                    <div class="TextBx">
+                        <button type="button" onclick="openLightbox();toSlide(4)" id="class_btn">Striking</button>
+                    </div>
+                </div>
+            </div>
+            <div class="c_column">
+                <div class="c_row eh">
+                    <div class="c_img">
+                        <img src="/Images/teenmma.svg" class="c_cover" alt="Teens Mixed-Martial Arts">
+                    </div>
+                    <div class="TextBx">
+                        <button type="button" onclick="openLightbox();toSlide(5)" id="class_btn">Teens MMA</button>
+                    </div>
+                </div>
+                <!-- <div class="c_row">
+                    <h1>High Intensity Interval Training Boxing (HIIT BOX)</h1>
+                </div> -->
+            </div>
+            <div id="Lightbox" class="modal">
+                <span class="close pointer" onclick="closeLightbox()">&times;</span>
+                <div class="modal-content">
+                    <div class="c_slide">
+                        <img src="/Images/adult jiu jitsu.png" class="class_img" alt="Jiu-Jitsu"/>
+                    </div>
+                    <div class="c_slide">
+                        <img src="/Images/box.png" class="class_img" alt="Boxing"/>
+                    </div>
+                    <div class="c_slide">
+                        <img src="/Images/over 35's.png" class="class_img" alt="Over 35 Training"/>
+                    </div>
+                    <div class="c_slide">
+                        <img src="/Images/striking.png" class="class_img" alt="Striking"/>
+                    </div>
+                    <div class="c_slide">
+                        <img src="/Images/TeensProgram.png" class="class_img" alt="Teen MMA"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script></script>
+    </section>
+    <section class="foot">
+        <div class="i_layout">
+            <p>Go and visit our social media pages or contact me directly at: <br>Cell: 061 009 8956</p>
+            <a href="tel:+27610098956"><img src="/Images/whatsapp.svg" class="icons"></a>
+            <a href="https://www.facebook.com/GBMMA.Bloemfontein/"><img src="/Images/fb.svg" class="icons"></a>
+            <a href="https://www.instagram.com/grizzlybearjiujitsuacademy/?hl=en"><img src="/Images/insta.svg" class="icons"></a>
+        </div>
+    </section>
+</body>
+</html>
